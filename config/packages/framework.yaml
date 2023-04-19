@@ -17,6 +17,9 @@ framework:
     #fragments: true
     php_errors:
         log: true
+    notifier:
+        chatter_transports:
+            slack: '%env(SLACK_DSN)%'
 
 when@test:
     framework:
