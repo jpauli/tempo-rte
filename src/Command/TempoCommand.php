@@ -19,7 +19,7 @@ use Symfony\Component\Notifier\Message\ChatMessage;
 class TempoCommand extends Command
 {
     private const COLORS_STDOUT  = ["bleu" => "<fg=blue>bleu</>", "blanc" => "<fg=white>blanc</>", "rouge" => "<fg=red>rouge</>"];
-    private const COLORS_SLACK = ['bleu' => ':large_blue_square:', 'rouge' => ':large_red_square:', 'blanc' => ':large_white_square:'];
+    private const COLORS_SLACK = ['bleu' => ':large_blue_square:', 'rouge' => ':large_red_square:', 'blanc' => ':white_large_square:'];
 
     public function __construct(private readonly TempoService $service, private readonly ChatterInterface $slack) { parent::__construct(); }
 
